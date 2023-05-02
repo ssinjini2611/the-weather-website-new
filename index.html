@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <title>Weather Forecast</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body id="background">
+    <header>
+      <a href="index.html"><img src="https://cdn-icons-png.flaticon.com/512/4052/4052984.png" alt="Logo for my weather website" class="logo"></a>
+      <h1>Weather Forecast</h1>
+    </header>
+    <div class="container">
+      <form>
+        <div class="search-container">
+          <label for="location">Enter location:</label>
+          <input type="text" id="location" placeholder="Enter location" name="location" required>
+          <br />
+          <br />
+          <label for="emailaddress">Enter email address:</label>
+          <input type="email" id="emailaddress" placeholder="Enter email address" name="emailaddress" required>
+          <br />
+          <br />
+          <input type="checkbox" id="subsc" name="subsc" value="yes" checked>
+          <label for="subscribe">Subscribe to our forecast?</label>
+          <center>
+          <button type="submit" onclick="getWeather(event)">Get Weather and subscribe</button>
+            </center>
+        </div>
+      </form>
+      <div class="current-weather" id="current-weather"></div>
+      <div class="forecast-container">
+        <div class="hourly-forecast" id="hourly-forecast">
+          
+          <div id="hourly"></div>
+        </div>
+        <div class="weather-forecast" id="forecast">
+          
+          <div id="weather"></div>
+        </div>
+      </div>
+      <!-- <form id="subscription-form">
+        <label for="email">Enter your email address to subscribe to weather updates:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <button onclick = "subscribeToUpdates(event)" type="submit">Subscribe</button>
+        
+      </form> -->
+    </div>
+    <script src="script.mjs" type="module"></script>
+  </body>
+</html>
