@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  width: 100px;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 0;
+  
+  font-family: 'Montserrat', sans-serif;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-right: 10px;
+  color: #333;
+}
+
+input[type="text"] {
+  padding: 5px 10px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  border: none;
+  width: 250px;
+}
+
+input[type="email"] {
+  padding: 5px 10px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  border: none;
+  width: 250px;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 1.2em;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-between;
+}
+
+.day {
+  flex-basis: calc(33.33% - 10px);
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.day img {
+  width: 80px;
+  height: 80px;
+  margin: 10px auto;
+}
+
+.temperature {
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+}
+
+.description {
+  font-size: 1.2em;
+  color: #333;
+  text-transform: capitalize;
+}
+
+.hourly-forecast {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hour {
+  flex-basis: calc(33.33% - 10px);
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 15px; 
+}
+
+.hour img {
+  width: 60px;
+  height: 60px;
+  margin: 10px auto;
+}
+
+.time {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+
+/* Center the current weather section */
+#current-weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+
+body {
+  background-image: url('https://t3.ftcdn.net/jpg/01/91/95/30/360_F_191953033_gehQATeDoh5z6PyRDbeKyBZuS83CjMEF.jpg'),
+url('https://img.freepik.com/free-vector/realistic-lightning-bolts_23-2149146671.jpg?size=626&ext=jpg&ga=GA1.1.414568554.1681730826&semt=sph'),
+url('https://img.freepik.com/free-vector/rain-with-falling-water-drops-white-background_1017-33600.jpg?size=626&ext=jpg&ga=GA1.2.414568554.1681730826&semt=sph'),
+url('https://png.pngtree.com/thumb_back/fw800/back_pic/03/60/56/2057a5eaaf07ea7.jpg'),
+url('https://img.freepik.com/free-photo/white-cloud-blue-sky-sea_1203-3021.jpg?size=626&ext=jpg&ga=GA1.2.414568554.1681730826&semt=ais'),
+url('https://png.pngtree.com/thumb_back/fh260/back_pic/00/04/81/115624fe1739a98.jpg'),
+url('https://img.freepik.com/free-photo/white-cloud-blue-sky-sea_1203-3021.jpg?size=626&ext=jpg&ga=GA1.2.414568554.1681730826&semt=ais')
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,  no-repeat,  no-repeat;
+  background-size: cover, cover, cover, cover, cover, cover, cover;
+  
+}
+
+
+
