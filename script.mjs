@@ -4,6 +4,16 @@ import { API_KEY } from './config.js';
 // Keep track of the user's previous location
 let previousLocation = '';
 
+function ValidateEmail(mail) 
+{
+ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
+  {
+    return (true)
+  }
+    alert("You have entered an invalid email address!")
+    return (false)
+}
+
 // Handle the user's weather search request
 function getWeather(event) {
 	// Prevent the default form submission behavior
@@ -11,14 +21,18 @@ function getWeather(event) {
 
 	// Get the user's location input and trim any leading/trailing whitespace
 	const location = document.getElementById('location').value.trim();
+  
   // Get the email input element
   const emailInput = document.getElementById('emailaddress').value.trim();
 
+  // Get the value of the subscription checkbox
   const check = document.getElementById('subsc');
-
+  
   if (check.checked == true) {
-var mailformat = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
-  if(!emailInput.match(mailformat))
+  
+  var mailformat = "/^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/";
+  
+  if(!ValidateEmail(emailInput))
   {
     alert("You have entered an invalid email address!");   
     return;
