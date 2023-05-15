@@ -32,14 +32,14 @@ app.get('/', (req, res) => {
 
 
 // Replacing the connection string with own MongoDB connection string
-const url = 'mongodb+srv://sinjinisarkar:fgthyu09@cluster0.p7gyjz5.mongodb.net/?retryWrites=true&w=majority'
+const url = 'mongodb+srv://sinjinisarkar:fgthyu09@cluster0.y0kfvct.mongodb.net/?retryWrites=true&w=majority'
 const dbName = 'weatherapp';
 
 const client = new MongoClient(url, { useNewUrlParser: true, useUnifiedTopology: true });
 const db = client.db(dbName);
 
 //periodically send weather updates to subscribed email addresses
-const job = schedule.scheduleJob('*/1 * * * *', async () => {
+const job = schedule.scheduleJob('0 7 * * *', async () => {
   console.log('Sending weather updates to subscribed email addresses...');
 
 const data = await db.collection('emails').find().toArray();
